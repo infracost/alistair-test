@@ -1,0 +1,11 @@
+on:
+  pull_request:
+  merge_group:
+
+jobs: 
+  check-code:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
